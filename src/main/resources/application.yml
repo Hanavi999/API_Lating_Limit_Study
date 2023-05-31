@@ -1,0 +1,25 @@
+spring:
+  main:
+    allow-circular-references: true
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password:
+    url: jdbc:mysql://localhost:3306/bucketStudy
+
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        default_batch_fetch_size: 1000
+    hibernate:
+      ddl-auto: update
+
+  mvc:
+    path match:
+      matching-strategy: ant_path_matcher
+
+
+jwt:
+  secret:
+    key: 6v9y$B&E)H@MbQeThWmZq4t7w!z%C*F-
